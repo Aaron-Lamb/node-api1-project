@@ -1,26 +1,14 @@
 let users = [
-    {
-        id: 1,
-        name: "U2",
-        bio: "Irish rock band"
-    },
-    {
-        id: 2,
-        name: "Genesis",
-        bio: "English rock group"
-    },
-    {
-        id: 3,
-        name: "Hootie and the Blowfish",
-        bio: "Southern rock band"
-    }
+    { id: "1", name: "U2", bio: "Irish rock band" },
+    { id: "2", name: "Genesis", bio: "English rock group" },
+    { id: "3", name: "Hootie and the Blowfish", bio: "Southern rock band" }
 ];
 
 const getUsers = () => {
     return users
 };
 
-const getUsersById = (id) => {
+let getUsersById = (id) => {
     return users.find(user => user.id === id)
 };
 
