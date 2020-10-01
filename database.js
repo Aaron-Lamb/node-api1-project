@@ -15,7 +15,7 @@ let getUsersById = (id) => {
 const createUser = (data) => {
     const payload = {
         id: String(users.length + 1),
-        ...data
+        ...data,
     }
     users.push(payload);
     return payload;
